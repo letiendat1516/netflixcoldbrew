@@ -200,7 +200,7 @@
           font-weight: bold;
           font-size: 1.2rem;
           box-shadow: 0 5px 15px rgba(229, 9, 20, 0.5);
-          margin left: 0.5cm;
+          margin-left: 0.5cm;
       }
 
       .tutorial-image {
@@ -227,6 +227,33 @@
               text-align: center;
               width: fit-content;
           }
+      }
+
+      .proxy-box {
+          background: rgba(0, 150, 136, 0.1);
+          border: 1px solid rgba(0, 150, 136, 0.3);
+          border-radius: 15px;
+          padding: 20px;
+          margin-bottom: 15px;
+          transition: all 0.3s ease;
+      }
+
+      .proxy-box:hover {
+          background: rgba(0, 150, 136, 0.15);
+          border-color: rgba(0, 150, 136, 0.5);
+          transform: translateY(-2px);
+      }
+
+      .proxy-box strong {
+          color: #4dd0e1;
+          font-size: 1.1rem;
+      }
+
+      .proxy-box .link-btn {
+          background: linear-gradient(45deg, #00bcd4, #4dd0e1);
+          margin-top: 10px;
+          width: 100%;
+          text-align: center;
       }
   </style>
 </head>
@@ -321,6 +348,63 @@
                          	Link Nhập Mã Kích Hoạt
                       </a>
                   </div>
+              </div>
+          </div>
+
+          <!-- Hướng dẫn 5 -->
+          <div class="col-12 mb-4">
+              <div class="tutorial-card h-100">
+                  <div class="tutorial-icon">
+                      <i class="fab fa-telegram-plane"></i>
+                  </div>
+                  <h3 class="text-center mb-4">Hướng Dẫn Vượt Chặn Telegram</h3>
+                  
+                  <div class="row g-4">
+                      <div class="col-md-6">
+                          <h6 class="fw-bold text-info mb-3">
+                              <i class="fas fa-tools me-2"></i>
+                              Các bước thực hiện:
+                          </h6>
+                          <div class="mb-3">
+                              <span class="badge bg-primary me-2">B1:</span>
+                              Sử dụng 1.1.1.1 hoặc bất kỳ VPN IP ngoại nào để vào được Telegram
+                          </div>
+                          <div class="mb-3">
+                              <span class="badge bg-primary me-2">B2:</span>
+                              Bấm vào link Proxy bên dưới để thêm vào Telegram
+                          </div>
+                          <div class="mb-3">
+                              <span class="badge bg-primary me-2">B3:</span>
+                              Tắt VPN/1.1.1.1, để Proxy chạy riêng trong Telegram
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-6">
+                          <h6 class="fw-bold text-success mb-3">
+                              <i class="fas fa-link me-2"></i>
+                              Link Proxy miễn phí:
+                          </h6>
+                          
+                          <div class="proxy-box">
+                              <strong>Proxy 1:</strong>
+                              <div class="text-muted small mb-2"></div>
+                              <a href="https://t.me/proxy?server=proxytelegramcsa1.csadata4g.me&port=1906&secret=fbb53791fa8c4dbd664575e2270b1136" target="_blank" class="link-btn">
+                                  <i class="fab fa-telegram-plane me-2"></i>
+                                  proxytelegramcsa1.csadata4g.me
+                              </a>
+                          </div>
+                          
+                          <div class="proxy-box">
+                              <strong>Proxy 2:</strong>
+                              <div class="text-muted small mb-2"></div>
+                              <a href="https://t.me/proxy?server=proxytelegramcsa2.csadata4g.me&port=1906&secret=5f6a868cd7c870a0baf1690e41084dad" target="_blank" class="link-btn">
+                                  <i class="fab fa-telegram-plane me-2"></i>
+                                  proxytelegramcsa2.csadata4g.me
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  
               </div>
           </div>
       </div>
